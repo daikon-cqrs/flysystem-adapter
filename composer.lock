@@ -110,12 +110,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/daikon-cqrs/dbal.git",
-                "reference": "288ec3856d0e9e2dc30f0391507c8ddc20f2004c"
+                "reference": "957b22470c58d889b2a97c109b5c4003e721953b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/daikon-cqrs/dbal/zipball/288ec3856d0e9e2dc30f0391507c8ddc20f2004c",
-                "reference": "288ec3856d0e9e2dc30f0391507c8ddc20f2004c",
+                "url": "https://api.github.com/repos/daikon-cqrs/dbal/zipball/957b22470c58d889b2a97c109b5c4003e721953b",
+                "reference": "957b22470c58d889b2a97c109b5c4003e721953b",
                 "shasum": ""
             },
             "require": {
@@ -145,7 +145,7 @@
                 "dbal",
                 "immutable"
             ],
-            "time": "2017-07-12 00:29:21"
+            "time": "2017-07-12 16:39:02"
         },
         {
             "name": "league/flysystem",
