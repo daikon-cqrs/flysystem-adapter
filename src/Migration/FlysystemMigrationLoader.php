@@ -5,11 +5,14 @@ namespace Daikon\Flysystem\Migration;
 use Daikon\Dbal\Migration\MigrationList;
 use Daikon\Dbal\Migration\MigrationLoaderInterface;
 use Daikon\Flysystem\Connector\FlysystemConnector;
+use League\Flysystem\MountManager;
 
 final class FlysystemMigrationLoader implements MigrationLoaderInterface
 {
+    /** @var FlysystemConnector */
     private $connector;
 
+    /** @var array */
     private $settings;
 
     public function __construct(FlysystemConnector $connector, array $settings = [])
@@ -20,9 +23,10 @@ final class FlysystemMigrationLoader implements MigrationLoaderInterface
 
     public function load(): MigrationList
     {
+        /** @var MountManager $filesystem */
         $filesystem = $this->connector->getConnection();
         $contents = $filesystem->listContents($this->settings['location'], true);
-        $migrationFiles = array_filter($contents, function ($fileinfo) {
+        $migrationFiles = array_filter($contents, function (array $fileinfo): bool {
             return isset($fileinfo['extension']) && $fileinfo['extension'] === 'php';
         });
 
@@ -38,7 +42,7 @@ final class FlysystemMigrationLoader implements MigrationLoaderInterface
         return new MigrationList($migrations);
     }
 
-    private function getBaseDir()
+    private function getBaseDir(): string
     {
         $connectorSettings = $this->connector->getSettings();
         return $connectorSettings['mounts']['migration']['location'];
