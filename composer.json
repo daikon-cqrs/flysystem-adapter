@@ -9,7 +9,7 @@
     "minimum-stability": "dev",
     "require": {
         "php": "^7.2",
-        "daikon/dbal": "dev-upgrade/nativecalls",
+        "daikon/dbal": "dev-upgrade-7.2",
         "league/flysystem": "^1.0"
     },
     "require-dev": {
