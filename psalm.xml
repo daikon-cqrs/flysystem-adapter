@@ -12,7 +12,7 @@
     name="Psalm config used for daikon-cqrs libs"
     useDocblockTypes="true"
     totallyTyped="false"
-    allowFileIncludes="false"
+    allowFileIncludes="true"
     requireVoidReturnType="true"
     useAssertForType="false"
     rememberPropertyAssignmentsAfterCall="true"
