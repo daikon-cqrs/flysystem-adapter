@@ -15,11 +15,9 @@ use League\Flysystem\MountManager;
 
 final class FlysystemMigrationLoader implements MigrationLoaderInterface
 {
-    /** @var FlysystemConnector */
-    private $connector;
+    private FlysystemConnector $connector;
 
-    /** @var array */
-    private $settings;
+    private array $settings;
 
     public function __construct(FlysystemConnector $connector, array $settings = [])
     {
