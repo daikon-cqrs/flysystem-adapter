@@ -9,14 +9,14 @@
 namespace Daikon\Flysystem\Connector;
 
 use Daikon\Dbal\Connector\ConnectorInterface;
-use Daikon\Dbal\Connector\ConnectorTrait;
+use Daikon\Dbal\Connector\ProvidesConnector;
 use League\Flysystem\AdapterInterface;
 use League\Flysystem\Filesystem;
 use League\Flysystem\MountManager;
 
 final class FlysystemConnector implements ConnectorInterface
 {
-    use ConnectorTrait;
+    use ProvidesConnector;
 
     protected function connect(): MountManager
     {
