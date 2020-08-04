@@ -5,7 +5,7 @@
 ![Packagist License](https://img.shields.io/packagist/l/daikon/flysystem-adapter)
 
 [![Build Status](https://travis-ci.com/daikon-cqrs/flysystem-adapter.svg?branch=master)](https://travis-ci.com/daikon-cqrs/flysystem-adapter)
-[![Code Coverage](https://scrutinizer-ci.com/g/daikon-cqrs/flysystem-adapter/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/daikon-cqrs/flysystem-adapter/?branch=master)
+[![Code Coverage](https://img.shields.io/codecov/c/github/daikon-cqrs/flysystem-adapter)](https://codecov.io/gh/daikon-cqrs/flysystem-adapter)
 [![Type Coverage](https://shepherd.dev/github/daikon-cqrs/flysystem-adapter/coverage.svg)](https://shepherd.dev/github/daikon-cqrs/flysystem-adapter)
 [![Libraries.io dependency status](https://img.shields.io/librariesio/github/daikon-cqrs/flysystem-adapter)](https://libraries.io/github/daikon-cqrs/flysystem-adapter)
 [![Scrutinizer code quality](https://img.shields.io/scrutinizer/quality/g/daikon-cqrs/flysystem-adapter/master)](https://scrutinizer-ci.com/g/daikon-cqrs/flysystem-adapter/?branch=master)
