@@ -267,12 +267,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/daikon-cqrs/interop.git",
-                "reference": "a2594429de9dd4fe4c3210aa57e1686397cecc0b"
+                "reference": "e7e3668ee8035f0bb1261fdb27db14c417948e3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/daikon-cqrs/interop/zipball/a2594429de9dd4fe4c3210aa57e1686397cecc0b",
-                "reference": "a2594429de9dd4fe4c3210aa57e1686397cecc0b",
+                "url": "https://api.github.com/repos/daikon-cqrs/interop/zipball/e7e3668ee8035f0bb1261fdb27db14c417948e3e",
+                "reference": "e7e3668ee8035f0bb1261fdb27db14c417948e3e",
                 "shasum": ""
             },
             "require": {
@@ -281,9 +281,9 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^9.0",
-                "sebastian/phpcpd": "^5.0",
+                "sebastian/phpcpd": "^6.0",
                 "squizlabs/php_codesniffer": "^3.3",
-                "vimeo/psalm": "^3.0"
+                "vimeo/psalm": "^3.13"
             },
             "type": "library",
             "autoload": {
@@ -297,7 +297,7 @@
             ],
             "description": "Interoperability code used across Daikon-CQRS components.",
             "homepage": "https://github.com/daikon-cqrs/interop",
-            "time": "2020-08-04T14:05:27+00:00"
+            "time": "2020-08-15T21:12:56+00:00"
         },
         {
             "name": "daikon/message-bus",
@@ -441,12 +441,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/daikon-cqrs/value-object.git",
-                "reference": "3ef45c6657599d7934ec7d671c7fb3b3bd5f75a9"
+                "reference": "79e413903fb1a554df623329735a48bc4c13333e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/daikon-cqrs/value-object/zipball/3ef45c6657599d7934ec7d671c7fb3b3bd5f75a9",
-                "reference": "3ef45c6657599d7934ec7d671c7fb3b3bd5f75a9",
+                "url": "https://api.github.com/repos/daikon-cqrs/value-object/zipball/79e413903fb1a554df623329735a48bc4c13333e",
+                "reference": "79e413903fb1a554df623329735a48bc4c13333e",
                 "shasum": ""
             },
             "require": {
@@ -476,32 +476,33 @@
             "keywords": [
                 "value-object"
             ],
-            "time": "2020-08-04T17:49:44+00:00"
+            "time": "2020-08-10T23:16:18+00:00"
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.70",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "585824702f534f8d3cf7fab7225e8466cc4b7493"
+                "reference": "6e96f54d82e71f71c4108da33ee96a7f57083710"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/585824702f534f8d3cf7fab7225e8466cc4b7493",
-                "reference": "585824702f534f8d3cf7fab7225e8466cc4b7493",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/6e96f54d82e71f71c4108da33ee96a7f57083710",
+                "reference": "6e96f54d82e71f71c4108da33ee96a7f57083710",
                 "shasum": ""
             },
             "require": {
                 "ext-fileinfo": "*",
-                "php": ">=5.5.9"
+                "league/mime-type-detection": "^1.3",
+                "php": "^7.2.5 || ^8.0"
             },
             "conflict": {
                 "league/flysystem-sftp": "<1.0.6"
             },
             "require-dev": {
-                "phpspec/phpspec": "^3.4 || ^4.0 || ^5.0 || ^6.0",
-                "phpunit/phpunit": "^5.7.26"
+                "phpspec/prophecy": "^1.11.1",
+                "phpunit/phpunit": "^8.5.8"
             },
             "suggest": {
                 "ext-fileinfo": "Required for MimeType",
@@ -566,7 +567,58 @@
                     "type": "other"
                 }
             ],
-            "time": "2020-07-26T07:20:36+00:00"
+            "time": "2020-08-12T14:23:41+00:00"
+        },
+        {
+            "name": "league/mime-type-detection",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/mime-type-detection.git",
+                "reference": "fda190b62b962d96a069fcc414d781db66d65b69"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/mime-type-detection/zipball/fda190b62b962d96a069fcc414d781db66d65b69",
+                "reference": "fda190b62b962d96a069fcc414d781db66d65b69",
+                "shasum": ""
+            },
+            "require": {
+                "ext-fileinfo": "*",
+                "php": "^7.2 || ^8.0"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^0.12.36",
+                "phpunit/phpunit": "^8.5.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "League\\MimeTypeDetection\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Frank de Jonge",
+                    "email": "info@frankdejonge.nl"
+                }
+            ],
+            "description": "Mime-type detection for Flysystem",
+            "funding": [
+                {
+                    "url": "https://github.com/frankdejonge",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/league/flysystem",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-08-09T10:34:01+00:00"
         },
         {
             "name": "php-ds/php-ds",
@@ -2212,6 +2264,7 @@
                     "type": "github"
                 }
             ],
+            "abandoned": true,
             "time": "2020-08-04T08:28:15+00:00"
         },
         {
@@ -2819,6 +2872,7 @@
             ],
             "description": "FinderFacade is a convenience wrapper for Symfony's Finder component.",
             "homepage": "https://github.com/sebastianbergmann/finder-facade",
+            "abandoned": true,
             "time": "2020-02-08T06:07:58+00:00"
         },
         {
